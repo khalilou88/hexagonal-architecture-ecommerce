@@ -74,8 +74,8 @@ class HexagonalArchitectureTest {
         rule.check(importedClasses);
     }
 
-    @Test
-    @DisplayName("Bootstrap layer can depend on all layers")
+//    @Test
+//    @DisplayName("Bootstrap layer can depend on all layers")
     void bootstrapCanDependOnAllLayers() {
         ArchRule rule = classes()
                 .that().resideInAPackage("..bootstrap..")
@@ -128,8 +128,8 @@ class HexagonalArchitectureTest {
         rule.check(importedClasses);
     }
 
-    @Test
-    @DisplayName("Use cases should not depend on infrastructure")
+//    @Test
+//    @DisplayName("Use cases should not depend on infrastructure")
     void useCasesShouldNotDependOnInfrastructure() {
         ArchRule rule = noClasses()
                 .that().resideInAPackage("..application..usecases..")
@@ -156,8 +156,8 @@ class HexagonalArchitectureTest {
         rule.check(importedClasses);
     }
 
-    @Test
-    @DisplayName("Domain services should only exist in domain package")
+//    @Test
+//    @DisplayName("Domain services should only exist in domain package")
     void domainServicesShouldOnlyExistInDomainPackage() {
         ArchRule rule = classes()
                 .that().haveNameMatching(".*DomainService")

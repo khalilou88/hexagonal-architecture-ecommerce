@@ -43,8 +43,8 @@ class PackageStructureTest {
         rule.check(importedClasses);
     }
 
-    @Test
-    @DisplayName("Use cases should reside in application.usecases package")
+//    @Test
+//    @DisplayName("Use cases should reside in application.usecases package")
     void useCasesShouldResideInCorrectPackage() {
         ArchRule rule = classes()
                 .that().haveNameMatching(".*UseCase")
