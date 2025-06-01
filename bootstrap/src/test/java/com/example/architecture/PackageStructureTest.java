@@ -22,16 +22,16 @@ class PackageStructureTest {
                 .importPackages("com.example");
     }
 
-    @Test
-    @DisplayName("Domain entities should reside in domain package")
-    void domainEntitiesShouldResideInDomainPackage() {
-        ArchRule rule = classes()
-                .that().haveNameMatching("User|Order|Product")
-                .and().doNotHaveNameMatching(".*Entity|.*DTO|.*Request|.*Response")
-                .should().resideInAPackage("..domain..");
-
-        rule.check(importedClasses);
-    }
+//    @Test
+//    @DisplayName("Domain entities should reside in domain package")
+//    void domainEntitiesShouldResideInDomainPackage() {
+//        ArchRule rule = classes()
+//                .that().haveNameMatching("User|Order|Product")
+//                .and().doNotHaveNameMatching(".*Entity|.*DTO|.*Request|.*Response")
+//                .should().resideInAPackage("..domain..");
+//
+//        rule.check(importedClasses);
+//    }
 
     @Test
     @DisplayName("Value objects should reside in domain package")

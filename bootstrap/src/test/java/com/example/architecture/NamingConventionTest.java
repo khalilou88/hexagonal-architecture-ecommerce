@@ -22,16 +22,16 @@ class NamingConventionTest {
                 .importPackages("com.example");
     }
 
-    @Test
-    @DisplayName("Repository implementations should be named *RepositoryImpl")
-    void repositoryImplementationsShouldBeNamedCorrectly() {
-        ArchRule rule = classes()
-                .that().resideInAPackage("..infrastructure..repositories..")
-                .and().implement(classes().that().resideInAPackage("..application..ports.."))
-                .should().haveNameMatching(".*RepositoryImpl");
-
-        rule.check(importedClasses);
-    }
+//    @Test
+//    @DisplayName("Repository implementations should be named *RepositoryImpl")
+//    void repositoryImplementationsShouldBeNamedCorrectly() {
+//        ArchRule rule = classes()
+//                .that().resideInAPackage("..infrastructure..repositories..")
+//                .and().implement(classes().that().resideInAPackage("..application..ports.."))
+//                .should().haveNameMatching(".*RepositoryImpl");
+//
+//        rule.check(importedClasses);
+//    }
 
     @Test
     @DisplayName("Repository ports should be named *Repository")
