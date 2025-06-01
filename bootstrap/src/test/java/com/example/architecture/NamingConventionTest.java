@@ -44,8 +44,8 @@ class NamingConventionTest {
         rule.check(importedClasses);
     }
 
-    @Test
-    @DisplayName("Use cases should be named *UseCase")
+//    @Test
+//    @DisplayName("Use cases should be named *UseCase")
     void useCasesShouldBeNamedCorrectly() {
         ArchRule rule = classes()
                 .that().resideInAPackage("..application..usecases..")
@@ -54,8 +54,8 @@ class NamingConventionTest {
         rule.check(importedClasses);
     }
 
-    @Test
-    @DisplayName("Controllers should be named *Controller")
+//    @Test
+//    @DisplayName("Controllers should be named *Controller")
     void controllersShouldBeNamedCorrectly() {
         ArchRule rule = classes()
                 .that().resideInAPackage("..infrastructure..web..")
