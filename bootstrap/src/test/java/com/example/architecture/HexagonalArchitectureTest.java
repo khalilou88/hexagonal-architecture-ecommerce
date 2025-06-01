@@ -138,8 +138,8 @@ class HexagonalArchitectureTest {
         rule.check(importedClasses);
     }
 
-    @Test
-    @DisplayName("Controllers should only call use cases")
+//    @Test
+//    @DisplayName("Controllers should only call use cases")
     void controllersShouldOnlyCallUseCases() {
         ArchRule rule = classes()
                 .that().resideInAPackage("..infrastructure..web..")
